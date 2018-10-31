@@ -1,8 +1,9 @@
 import {ElementRef, Injectable, NgZone, Optional, SkipSelf} from '@angular/core';
+import {fromEvent} from 'rxjs/observable/fromEvent';
 import {Platform} from '../../platform/index';
 import {Scrollable} from './scrollable';
 import {Subject} from 'rxjs/Subject';
-import {Observable, fromEvent} from 'rxjs';
+import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/auditTime';
